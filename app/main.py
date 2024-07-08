@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel
 from app.fibonacci import calculate_fibonacci
 
@@ -22,5 +22,8 @@ async def get_fibonacci(n: int = Query(..., gt=0)) -> FibonacciResponse:
     FibonacciResponse
         n番目のフィボナッチ数を含むレスポンス
     """
-    result = calculate_fibonacci(n)
+    try:
+        result = calculate_fibonacci(n)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
     return FibonacciResponse(result=result)
