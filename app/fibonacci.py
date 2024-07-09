@@ -1,6 +1,3 @@
-from functools import lru_cache
-
-@lru_cache
 def calculate_fibonacci(n: int) -> int:
     """
     n番目のフィボナッチ数を計算
