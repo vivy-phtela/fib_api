@@ -9,7 +9,7 @@ def calculate_fibonacci(n: int) -> int:
 
     Returns
     ----------
-    nth_fibonacci : int
+    current : int
         n番目のフィボナッチ数
     """
     if n == 1 or n == 2:
