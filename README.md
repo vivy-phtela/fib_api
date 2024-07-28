@@ -4,6 +4,21 @@
 
 <br>
 
+## 使用言語とライブラリ
+
+Python 3.11.9
+
+`FastAPI`
+Python で Web API を構築するためのフレームワーク．
+
+`Uvicorn`
+Python 用の ASGI(Asynchronous Server Gateway Interface) Web サーバ．
+
+`pytest`
+Python 用に設計されたユニットテストを自動化するフレームワーク．
+
+<br>
+
 ## 使用方法
 
 以下の URL にアクセスする．
@@ -45,21 +60,6 @@ OUT:
   "result":218922995834555169026
 }
 ```
-
-<br>
-
-## 使用言語とライブラリ
-
-Python 3.11.9
-
-`FastAPI`
-Python で Web API を構築するためのフレームワーク．
-
-`Uvicorn`
-Python 用の ASGI(Asynchronous Server Gateway Interface) Web サーバ．
-
-`pytest`
-Python 用に設計されたユニットテストを自動化するフレームワーク．
 
 <br>
 
